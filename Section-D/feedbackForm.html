@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <label for="name"
+      >Name:
+      <input type="text" />
+    </label>
+    <br />
+    <br />
+    <label for="course">Course</label>
+
+    <select name="Course" id="course">
+      <option value="" disabled selected>select course</option>
+      <option value="1">Frontend</option>
+      <option value="2">backend</option>
+      <option value="3">Full Stack</option>
+      <option value="4">Data science</option>
+    </select>
+
+    <br /><br />
+    <label for="rating">Rating :</label>
+    Excellent <input type="radio" name="rating" value="Excellent" /> Good
+    <input type="radio" name="rating" value="Good" /> Average
+    <input type="radio" name="rating" id="Average" /> Poor
+    <input type="radio" name="rating" id="Poor" />
+
+    <br /><br />
+    <label for="like"
+      >What do you like?<br />
+      teaching <input type="checkbox" name="like" /> course structure
+      <input type="checkbox" name="like" /> concept understanding
+      <input type="checkbox" name="like" /> class environment
+      <input type="checkbox" name="like" />
+    </label>
+    <br /><br />
+    <label for="suggestion">Suggestions for improvement...</label>
+    <textarea
+      name="suggestion"
+      id="suggestion"
+      rows="5"
+      cols="20"
+      placeholder="Any suggestions?"
+    ></textarea>
+
+    <br /><br />
+    <label for="recommendation">Would you recommend this course?</label>
+    Yes <input type="radio" name="recommendation" id="Yes" /> No
+    <input type="radio" name="recommendation" id="No" />
+    <br /><br />
+
+    <button type="submit">Submit</button>
+  </body>
+</html>
