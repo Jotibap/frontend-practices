@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration <Form></Form></title>
+  </head>
+  <body>
+    <h1>Student Regisration Form</h1>
+    <form>
+      <label for="name">
+        Name :
+        <input type="text" />
+      </label>
+      <br /><br />
+
+      <label for="email">
+        Email :
+        <input type="email" />
+      </label>
+      <br /><br />
+
+      <label for="password">
+        Password :
+        <input type="password" />
+      </label>
+      <br /><br />
+
+      <label for="day">
+        DOB :
+        <input type="date" />
+      </label>
+      <br /><br />
+
+      <label for="gender">Gender : </label>
+      male<input type="radio" name="gender" value="male" /> female<input
+        type="radio"
+        name="gender"
+        value="female"
+      />
+      <br />
+      <br />
+
+      <label for="grade">Class : </label>
+
+      <select name="class" id="grade">
+        <option value="" disabled selected>select your class</option>
+        <option value="1">1 class</option>
+        <option value="2">2 class</option>
+        <option value="3">3 class</option>
+        <option value="4">4 class</option>
+        <option value="5">5 class</option>
+        <option value="6">6 class</option>
+        <option value="7">7 class</option>
+        <option value="8">8 class</option>
+        <option value="9">9 class</option>
+        <option value="10">10 class</option>
+        <option value="11">11 class</option>
+        <option value="12">12 class</option>
+      </select>
+      <br /><br />
+
+      <label for="subjects">
+        Interested subjects : C programming<input
+          type="checkbox"
+          name="subjects"
+          id=""
+        />
+        Java<input type="checkbox" name="subjects" id="" /> Python<input
+          type="checkbox"
+          name="subjects"
+          id=""
+        />
+        JavaScript<input type="checkbox" name="subjects" id="" /> R<input
+          type="checkbox"
+          name="subjects"
+          id=""
+        />
+      </label>
+      <br /><br />
+
+      <label for="address"
+        >Address :
+        <textarea
+          name="address"
+          id="address"
+          rows="4"
+          cols="24"
+          placeholder="Enter your Address"
+        ></textarea>
+      </label>
+    </form>
+  </body>
+</html>
