@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout with classes</title>
+
+    <style>
+      body {
+        background-color: #ffffff;
+
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .header {
+        background-color: #595959;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navbar {
+        color: rgb(175, 175, 175);
+        background-color: #383737;
+        padding: 20px;
+      }
+      .navbar a {
+        color: white;
+      }
+
+      .sidebar {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        margin-right: 600px;
+      }
+      .sidebar p {
+        color: red;
+      }
+      .button {
+        background-color: #a5eaa0;
+        padding: 4px;
+      }
+      .container {
+        background-color: #eaeaea;
+        padding: 20px;
+        align-items: center;
+      }
+      h3 {
+        color: blue;
+      }
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .footer {
+        background-color: black;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>Welcome to our website</h1>
+        <div class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <p>Sidebar menu</p>
+          <button class="button">Home</button><br /><br />
+          <button class="button">About</button><br /><br />
+          <button class="button">Contact</button>
+        </div>
+
+        <div class="main-content">
+          <div class="card" id="home">
+            <h3>Home Section</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+              laborum, provident eaque possimus, magni natus rem aliquam ratione
+              neque, veritatis nulla fuga distinctio quo fugiat dolorum magnam
+              esse sapiente nostrum. Nam, aspernatur ullam tempore culpa nihil
+              deleniti cum at quibusdam hic, officia nostrum earum accusantium
+              non totam eveniet doloremque perspiciatis?
+            </p>
+            <button class="button">Click to know more</button>
+          </div>
+          <br />
+
+          <div class="card" id="about">
+            <h3>About Section</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto adipisci amet, ut repellat incidunt odio rerum ullam
+              delectus asperiores sunt. Officiis a sequi laborum tempora,
+              perspiciatis quia ad accusantium, reiciendis aspernatur iure
+              recusandae. Minus deleniti aspernatur, nobis nihil odio ipsa
+              libero a accusamus, dolorem eum doloribus iste sunt incidunt,
+              fugiat quaerat temporibus obcaecati? Voluptas totam similique
+              voluptate. Tenetur impedit sint voluptatum necessitatibus?
+              Impedit, soluta. Ratione, reprehenderit natus quo quisquam laborum
+              facilis. Unde nihil sequi aperiam voluptatem veniam non placeat
+              sed numquam ducimus! Quibusdam perspiciatis magnam vel modi odit
+              ipsa repellendus, commodi dolorem, maiores error ipsum dolore,
+              consequatur ab esse vero?
+            </p>
+            <button class="button">Click here</button>
+          </div>
+          <br />
+
+          <div class="card" id="contact">
+            <h3>Contact section</h3>
+            <form>
+              <label for="name">Name :</label>
+              <input type="text" />
+              <br />
+              <br />
+              <label for="email">Email :</label>
+              <input type="email" id="email" />
+              <br /><br />
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br />
+    <br />
+    <footer>
+      <div class="footer">My Website — All Rights Reserved</div>
+    </footer>
+  </body>
+</html>
