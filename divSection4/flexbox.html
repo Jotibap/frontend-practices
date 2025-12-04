@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox demo1</title>
+    <style>
+      .flex-container {
+        display: flex;
+      }
+      .flex-item {
+        background-color: rgb(172, 221, 238);
+        padding: 20px;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .align-center {
+        align-items: center;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      ul.flex-container {
+        gap: 40px;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .gallery-box {
+        width: 200px;
+        height: 150px;
+        background: lightgreen;
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .card {
+        background-color: lightgray;
+        padding: 20px;
+        width: 500px;
+        margin: 15px;
+        border-radius: 10px;
+      }
+      .card > p {
+        color: rgb(64, 125, 3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container justify-center align-center">
+      <nav>
+        <ul class="flex-container justify-center align-center flex-item">
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex-container flex-wrap justify-center">
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+      <div class="gallery-box"></div>
+    </div>
+
+    <div class="flex-container flex-wrap justify-center">
+      <div class="card">
+        <h2 style="color: red">card 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+          suscipit nostrum quam rem officia, cupiditate consequatur distinctio
+          odio. Nulla aliquid voluptate voluptates sit ea omnis doloribus vero
+          quae. Molestias tempore animi nam vel deleniti? Dignissimos vero
+          maiores neque eveniet aut esse amet, consectetur ex cumque fugiat
+          corporis quos atque asperiores!
+        </p>
+      </div>
+      <div class="card">
+        <h2 style="color: green">card 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat
+          nisi molestiae, inventore facilis ad incidunt aliquam magni explicabo,
+          ipsa sequi adipisci, voluptates quas. Illum et eum perspiciatis
+          similique illo tempora cum libero animi, facere neque, qui in
+          veritatis culpa molestias, ad voluptatibus dolorum quaerat placeat
+          alias itaque optio inventore.
+        </p>
+      </div>
+      <div class="card">
+        <h2 style="color: blue">card 3</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          at laudantium vero iusto iste ipsa illo sunt voluptas, magni fugit
+          quas officiis quaerat unde. Tempore, corrupti numquam! Esse porro
+          illum consequuntur, ratione nobis ab optio. Ut, porro ea aliquam dolor
+          exercitationem expedita minima vel quis amet accusantium debitis
+          praesentium saepe.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

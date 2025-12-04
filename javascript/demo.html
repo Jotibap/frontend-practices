@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js demo</title>
+  </head>
+  <body>
+    <h2>javascript printing statements</h2>
+
+    <input id="userName" type="text" placeholder="enter name" />
+    <button onclick="showName()">submit</button>
+    <!-- <script src="../javascript/script.js"></script> -->
+
+    <p id="result"></p>
+
+    <script>
+      function showName() {
+        let name = document.getElementById("userName").value;
+        document.getElementById("result").innerText = "name " + name;
+      }
+    </script>
+  </body>
+</html>

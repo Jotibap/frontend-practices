@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid demo</title>
+
+    <style>
+      .grid-container {
+        display: grid;
+      }
+      .grid-2-col {
+        grid-template-columns: 1fr 1fr;
+      }
+      .grid-3-col {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .grid-4-col {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .grid-gap-small {
+        gap: 20px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #a0f48e;
+      }
+      .grid-gap-medium {
+        gap: 30px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #69c953;
+      }
+      .grid-gap-large {
+        gap: 40px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #42962f;
+      }
+      .img {
+        width: 200px;
+        height: 100px;
+        border-radius: 30px 5px;
+      }
+
+      .span {
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container grid-2-col grid-gap-small">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          praesentium iste reiciendis beatae magni repellendus placeat, nemo
+          repellat assumenda autem rem quos nulla, voluptatem minus ad quisquam
+          delectus consectetur illo.
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ad
+          sed tempore fugit voluptas hic libero aspernatur officiis numquam
+          dolores!
+        </p>
+      </div>
+    </div>
+    <div class="grid-container grid-3-col grid-gap-medium">
+      <img src="../Section-F/img/animecoder.jpg" class="img" />
+      <img src="../Section-F/img/animecoder.jpg" class="img" />
+      <img src="../Section-F/img/animecoder.jpg" class="img" />
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          laboriosam id ex, natus maiores itaque facilis? Fuga quaerat eius
+          alias?
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          commodi perferendis soluta? Sit beatae earum est, nulla id molestias
+          ut!
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          praesentium iste reiciendis beatae magni repellendus placeat, nemo
+          repellat assumenda autem rem quos nulla, voluptatem minus ad quisquam
+          delectus consectetur illo.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-container grid-4-col grid-gap-large">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          laboriosam id ex, natus maiores itaque facilis? Fuga quaerat eius
+          alias?
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          commodi perferendis soluta? Sit beatae earum est, nulla id molestias
+          ut!
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          praesentium iste reiciendis beatae magni repellendus placeat, nemo
+          repellat assumenda autem rem quos nulla.
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ad
+          sed tempore fugit voluptas hic libero aspernatur officiis numquam
+          dolores!
+        </p>
+      </div>
+    </div>
+
+    <h2>Dashboard layouts</h2>
+    <div class="grid-container grid-3-col grid-gap-medium">
+      <div class="box span" style="background-color: #ff6dff">
+        layout1
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+          possimus tenetur libero omnis et natus nisi ab quas modi. Quasi.
+        </p>
+      </div>
+
+      <div class="box" style="background-color: #c84cc8">
+        layout2
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          ratione.
+        </p>
+      </div>
+
+      <div class="box" style="background-color: #8a0a8a">
+        layout3
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
+          commodi modi. Omnis, corporis nulla? Eum alias sapiente obcaecati
+          minima in!
+        </p>
+      </div>
+
+      <div class="box" style="background-color: #801180">
+        layout4
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          minus quam voluptatum possimus laboriosam nihil ratione, at laudantium
+          sapiente voluptates.
+        </p>
+      </div>
+
+      <div class="box" style="background-color: #980098">
+        layout4
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+          sunt architecto earum consequatur optio nesciunt! Eum totam illum odio
+          libero.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
