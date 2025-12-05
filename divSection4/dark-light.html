@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dark light themes</title>
+
+    <style>
+      .light-theme {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .dark-theme {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      button {
+        padding: 10px 15px;
+        margin: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="light-theme" id="theme-container">
+      <button id="toggle-btn">Toggle Theme</button>
+      <h2>Dark and Light Themes</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla quisquam
+        natus, ratione, ullam in nam possimus atque veritatis iure quaerat
+        quibusdam, facere dicta. Id assumenda sit praesentium quaerat. Animi
+        provident ex minus earum temporibus impedit ducimus eaque consectetur
+        non dolorem, est repudiandae perferendis, quis libero obcaecati fugiat
+        distinctio error quia adipisci. Quasi debitis asperiores ullam et harum
+        facere mollitia doloribus maiores! Repudiandae mollitia libero
+        recusandae facere beatae officia, delectus quis assumenda doloribus sunt
+        voluptates perspiciatis doloremque id at inventore, consequatur aperiam
+        amet explicabo quidem? Ut minus nostrum repellendus non in recusandae
+        accusantium sequi, error neque et voluptate debitis eius corrupti
+        expedita maiores laudantium unde animi, illum quisquam, dicta numquam
+        inventore praesentium. Facere consequuntur ipsa reiciendis natus qui
+        dignissimos accusantium odit enim vitae officiis expedita similique fuga
+        in hic eos obcaecati, velit labore aut tenetur soluta totam at modi!
+        Voluptates fugiat eaque magnam nesciunt quam libero sapiente! Sit animi
+        porro saepe ipsa! Sint numquam eius quod facilis ab repellat, amet hic?
+        Cupiditate temporibus quam quo ut atque provident quia possimus dicta
+        iste omnis. Necessitatibus officia deleniti debitis nisi aliquid
+        exercitationem alias delectus eum, itaque, quo modi sit, nostrum facilis
+        saepe ex. Temporibus ad deserunt, reiciendis quia rerum nesciunt iste
+        omnis non magni illum fugiat vel nihil reprehenderit, quaerat earum
+        consequatur suscipit obcaecati maxime harum? Culpa eos perferendis eum.
+        Illo, eum impedit eligendi quisquam doloremque optio, ipsa iste dolorum
+        itaque, rerum quam. Tempora, dolores. Cupiditate nam rerum cumque
+        doloribus suscipit illo aliquam unde officiis, doloremque ipsam
+        molestiae sed impedit praesentium quibusdam consequatur aliquid
+        laboriosam? Numquam similique, deleniti sequi ipsum corporis ut cumque
+        blanditiis dolore voluptas autem obcaecati asperiores esse iure
+        inventore accusantium iste nam nostrum debitis ex! Odio quam veniam hic
+        corporis sit vitae, iste reprehenderit inventore voluptatum. Saepe
+        cupiditate quod vero, ut officia veniam numquam accusamus doloremque
+        laborum non officiis aliquam cum nihil, aliquid quisquam provident et
+        tempore consectetur incidunt nobis. Incidunt ratione, pariatur nemo
+        libero debitis cupiditate commodi facilis dolores. Assumenda placeat
+        inventore maiores, odit, fugit aperiam reprehenderit aut excepturi
+        distinctio earum tempora. Beatae at amet, ab laboriosam obcaecati
+        distinctio consectetur temporibus doloremque necessitatibus,
+        voluptatibus veniam minima cumque eius neque quasi doloribus quos.
+        Numquam ipsam cumque quaerat corrupti impedit maiores molestiae sit modi
+        repudiandae illo voluptatum perspiciatis, quidem tenetur excepturi
+        laudantium quam quis aspernatur nulla. Culpa obcaecati, architecto quo
+        soluta, ullam explicabo temporibus accusamus fugit, quaerat labore quis
+        neque veniam reiciendis quas eligendi quasi vel alias minima quam
+        ratione at.
+      </p>
+    </div>
+    <script>
+      const btn = document.getElementById("toggle-btn");
+      const container = document.getElementById("theme-container");
+
+      btn.addEventListener("click", () => {
+        container.classList.toggle("dark-theme");
+        container.classList.toggle("light-theme");
+      });
+    </script>
+  </body>
+</html>
