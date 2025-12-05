@@ -6,23 +6,142 @@
     <title>hover effect</title>
 
     <style>
-      .card-hover {
+      .nav-container {
+        background-color: lightgray;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
       }
+      h1, h2{
+        color: blue;
+      }
+      .home-section{
+        padding: 20px;
+        margin: 10px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+      .home-section:hover {
+        transform: translateY(-10px);
+        background-color: lightblue;
+      }
+      .grid-container {
+        display: flex;
+      }
+      .card-hover {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #989898;
+        border-radius: 10px;
+        width: 300px;
+        transition: transform 0.3s;
+        background-color: 0.3s;
+      }
+      .card-hover:hover {
+        transform: translateY(-10px);
+        background-color: lightblue;
+      }
+
       .button-hover {
+        padding: 10px 20px;
+        background-color: rgb(161, 160, 160);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .button-hover:hover {
+        background-color: gray;
+        color: white;
       }
       .image-hover {
+        height: 200px;
+        width: 300px;
+        border-radius: 10px 40px;
+
+        transition: transform 0.3s, box-shadow 0.3s;
       }
       .text-highlight {
+        transition: background-color 0.3s;
+        color: darkblue;
       }
     </style>
   </head>
   <body>
-    <div>
-      <p class="text-highlight">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        cupiditate sint quia impedit, deserunt animi quos expedita accusamus
-        dignissimos obcaecati.
-      </p>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#f1"><li>F1 race</li></a>
+        </ul>
+      </nav>
+    </div>
+
+    
+      <div class="home-section" id="home">
+        <h1>Formula 1 Racing</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          eaque aliquid aut explicabo, saepe ullam, possimus maxime excepturi
+          alias vel officia nisi reiciendis dignissimos fuga voluptates soluta
+          quo perferendis unde facilis! Dolores, voluptatibus? Dolores et sequi
+          expedita veritatis maiores delectus quam voluptates fugit vitae atque!
+          Hic iste provident ratione facilis. Molestias, nesciunt est. Ducimus
+          ex laborum vitae, natus ipsam magni, nisi harum, magnam at debitis
+          officiis asperiores ad molestiae fugiat nulla blanditiis hic.
+          Voluptatibus veritatis pariatur itaque hic? Nesciunt, ab minima
+          pariatur inventore laborum ea, ipsum consectetur et dignissimos
+          excepturi autem cumque placeat? Animi beatae rerum explicabo? Porro,
+          animi sunt. Non magnam dignissimos soluta reiciendis sint, ducimus,
+          deserunt dolore, eos necessitatibus ipsa repellendus molestiae!
+          Dignissimos natus illo, eum porro earum doloremque consectetur
+          explicabo quas sapiente veniam delectus facilis adipisci et optio
+          animi voluptate qui hic nostrum mollitia recusandae distinctio
+          voluptas omnis ipsum magni? Magnam qui delectus, similique, minima
+          iure, repudiandae provident rem tempora porro facilis ipsam. Dolorem
+          rem voluptate dolores. Necessitatibus adipisci vel dolor. Dolorem
+          ratione fugiat dolores repudiandae error, iure excepturi neque quasi.
+          Corporis aut quis nam hic vero dicta fugiat tempora amet voluptate,
+          facilis modi et dolore, iste sit unde itaque dignissimos mollitia
+          nobis. Harum repudiandae voluptatum inventore!
+        </p>
+      </div>
+      <div class="grid-container">
+      <div class="card-hover" id="about">
+        <h2>Demo card</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          cupiditate sint quia impedit, deserunt animi quos expedita accusamus
+          dignissimos obcaecati. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Repellendus sint pariatur totam reprehenderit, quam
+          autem iusto tempora, illum commodi soluta, consequatur hic beatae.
+          Totam ut dolores dolorum nemo minus unde?
+        </p>
+      </div>
+
+      <div class="card-hover" id="f1">
+        <h2>Formula 1 Car</h2>
+        <img class="image-hover" src="../Section-E/images/car1.jpg" alt="car" />
+        <p class="text-highlight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          nobis optio animi accusamus mollitia earum officiis ea in blanditiis
+          maxime, aliquam necessitatibus qui totam, placeat eos libero sapiente
+          hic vero esse architecto, odio dicta soluta distinctio amet. Neque eos
+          excepturi, doloremque, laudantium obcaecati nesciunt aliquid quaerat
+          iusto dicta ipsum nostrum similique maxime quo veritatis dolor sit
+          quasi. Quam repudiandae nostrum odio odit deleniti et assumenda iste
+          voluptatibus maxime praesentium facilis totam cumque cum distinctio
+          modi suscipit tempora mollitia ipsum vel, nisi rem. Temporibus
+          explicabo in, quibusdam recusandae minus ducimus ut, quasi non, ex
+          alias eligendi similique voluptatem eius porro itaque.
+        </p>
+        <a href="https://www.formula1.com/en/teams"
+          ><button class="button-hover">Know more</button></a
+        >
+      </div>
+    </div>
     </div>
   </body>
 </html>
