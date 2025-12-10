@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>diamond pattern</title>
+  </head>
+  <body>
+    <script>
+      let n = 5;
+      let mid = (n + 1) / 2;
+
+      for (let i = 1; i <= n; i++) {
+        let space;
+        let stars;
+
+        if (i <= mid) {
+          space = mid - i;
+          stars = 2 * i - 1;
+        } else {
+          space = i - mid;
+          stars = 2 * (n - i) + 1;
+        }
+
+        for (let j = 1; j <= space; j++) {
+          document.write("&nbsp;");
+        }
+        for (let k = 1; k <= stars; k++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
