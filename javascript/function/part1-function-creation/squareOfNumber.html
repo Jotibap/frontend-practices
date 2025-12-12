@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>square of number</title>
+  </head>
+  <body>
+    <p>Enter a number: <input type="text" id="num" /></p>
+
+    <button onclick="square()">Check square of Number</button>
+
+    <p id="result"></p>
+
+    <script>
+      function square() {
+        let n = Number(document.getElementById("num").value);
+
+        let result = n * n;
+
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

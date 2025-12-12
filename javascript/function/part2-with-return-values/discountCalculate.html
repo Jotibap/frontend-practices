@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dicscount calculation</title>
+  </head>
+  <body>
+    <p>Enter product price <input type="text" id="product" /></p>
+
+    <button onclick="finalPrice()">price after 25% discount</button>
+
+    <p id="fAmount"></p>
+
+    <script>
+      function calculateDis() {
+        let p = Number(document.getElementById("product").value);
+
+        return p - (disAmount = p * (25 / 100));
+      }
+
+      function finalPrice() {
+        let amt = calculateDis();
+
+        document.getElementById("fAmount").innerHTML = amt;
+      }
+    </script>
+  </body>
+</html>

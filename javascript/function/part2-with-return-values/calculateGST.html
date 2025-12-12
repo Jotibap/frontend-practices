@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate gst</title>
+  </head>
+  <body>
+    <p>Enter the price of product <input type="text" id="price" /></p>
+
+    <button onclick="finalPrice()">Price including GST</button>
+
+    <p id="totalPrice"></p>
+
+    <script>
+      function calculatedGst() {
+        let n = Number(document.getElementById("price").value);
+
+        return n + (n * 18) / 100;
+      }
+
+      function finalPrice() {
+        let totalPrice = calculatedGst();
+
+        document.getElementById("totalPrice").innerHTML = totalPrice;
+      }
+    </script>
+  </body>
+</html>

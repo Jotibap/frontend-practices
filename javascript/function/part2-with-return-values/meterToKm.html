@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>convert meter to centimeter</title>
+  </head>
+  <body>
+    <p>Enter the value for meter: <input type="text" id="meter" /></p>
+
+    <button onclick="convertMeterToKm()">Convert meter to km</button>
+
+    <p id="result"></p>
+
+    <script>
+      function calculate() {
+        let n = Number(document.getElementById("meter").value);
+
+        return n / 1000;
+      }
+
+      function convertMeterToKm() {
+        let result = calculate();
+
+        document.getElementById("result").innerHTML = result + " KM";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>area of triangle</title>
+  </head>
+  <body>
+    <p>Enter base value: <input type="text" id="base" /></p>
+    <p>Enter height value: <input type="text" id="height" /></p>
+
+    <button onclick="areaOftriangle()">calculate area of tringle</button>
+
+    <p id="area">area :</p>
+
+    <script>
+      function areaOftriangle() {
+        let b = Number(document.getElementById("base").value);
+        let h = Number(document.getElementById("height").value);
+
+        let area = (1 / 2) * b * h;
+
+        document.getElementById("area").innerHTML = area;
+      }
+    </script>
+  </body>
+</html>

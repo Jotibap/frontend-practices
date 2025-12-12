@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add numbers</title>
+  </head>
+  <body>
+    <p>Enter num1 <input type="text" id="num1" /></p>
+    <p>Enter num2 <input type="text" id="num2" /></p>
+    <button onclick="add()">Add</button>
+
+    <p id="result"></p>
+
+    <script>
+      function add() {
+        let n1 = Number(document.getElementById("num1").value);
+        let n2 = Number(document.getElementById("num2").value);
+
+        let result = n1 + n2;
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multiply by three</title>
+  </head>
+  <body>
+    <p>Enter a number <input type="text" id="num" /></p>
+
+    <button onclick="showResult()">get X3</button>
+
+    <p id="output"></p>
+
+    <script>
+      function multiplyThree() {
+        let n = Number(document.getElementById("num").value);
+
+        return 3 * n;
+      }
+
+      function showResult() {
+        let ans = multiplyThree();
+        document.getElementById("output").innerHTML = ans;
+      }
+    </script>
+  </body>
+</html>

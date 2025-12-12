@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>diplay full name?</title>
+  </head>
+  <body>
+    <p>Enter first name <input type="text" id="f-name" /></p>
+    <p>Enter last name <input type="text" id="l-name" /></p>
+
+    <button onclick="getFullName()">Display full name</button>
+
+    <p id="result"></p>
+
+    <script>
+      function addName() {
+        let f = document.getElementById("f-name").value;
+        let l = document.getElementById("l-name").value;
+
+        return f + " " + l;
+      }
+
+      function getFullName() {
+        let result = addName();
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
