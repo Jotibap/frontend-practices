@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check even odd zero</title>
+  </head>
+  <body>
+    <p>Enter a number <input type="text" name="" id="num" /></p>
+
+    <button onclick="positive()">Check EVEN / ODD / ZERO</button>
+
+    <p id="result">result</p>
+
+    <script>
+      function positive() {
+        let n = Number(document.getElementById("num").value);
+
+        if (n == 0) {
+          document.getElementById("result").innerHTML = n + " is a zero!";
+        }
+
+        if (n % 2 == 0) {
+          document.getElementById("result").innerHTML = n + " is Even number";
+        } else {
+          document.getElementById("result").innerHTML = n + " is Odd number";
+        }
+      }
+    </script>
+  </body>
+</html>

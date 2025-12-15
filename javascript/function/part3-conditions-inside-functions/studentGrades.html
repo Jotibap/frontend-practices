@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check students grades</title>
+  </head>
+  <body>
+    <p>Enter marks English <input type="text" name="" id="english" /></p>
+    <p>Enter marks Science <input type="text" name="" id="science" /></p>
+    <p>Enter marks Maths <input type="text" name="" id="maths" /></p>
+    <p>Enter marks Project <input type="text" name="" id="project" /></p>
+
+    <button onclick="checkGrades()">your grades</button>
+
+    <p id="result">result</p>
+
+    <script>
+      function calculateMarks() {
+        let e = Number(document.getElementById("english").value);
+        let s = Number(document.getElementById("science").value);
+        let m = Number(document.getElementById("maths").value);
+        let p = Number(document.getElementById("project").value);
+
+        return (totalMarks = (e + s + m + p) / 4);
+      }
+
+      function checkGrades() {
+        let totalMarks = calculateMarks();
+
+        if (totalMarks >= 90 && totalMarks <= 100) {
+          document.getElementById("result").innerHTML = "you secured grade A";
+        } else if (totalMarks >= 60 && totalMarks <= 90) {
+          document.getElementById("result").innerHTML = "you secured grade B";
+        } else if (totalMarks >= 35 && totalMarks <= 60) {
+          document.getElementById("result").innerHTML = "you secured grade B";
+        } else {
+          document.getElementById("result").innerHTML = "you are fail !!!";
+        }
+      }
+    </script>
+  </body>
+</html>
