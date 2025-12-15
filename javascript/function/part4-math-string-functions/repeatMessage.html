@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>repeat message</title>
+  </head>
+  <body>
+    <p>
+      Enter message you want to display <input type="text" name="" id="msg" />
+    </p>
+
+    <p>
+      Enter how many times you want to display
+      <input type="number" name="" id="num" />
+    </p>
+
+    <button onclick="repeatMessage()">display message</button>
+
+    <p id="display">display message</p>
+
+    <script>
+      function repeatMessage() {
+        let message = document.getElementById("msg").value;
+
+        let n = Number(document.getElementById("num").value);
+
+        document.getElementById("display").innerHTML = "";
+        while (n > 0) {
+          document.getElementById("display").innerHTML += message + "<br>";
+          n--;
+        }
+      }
+    </script>
+  </body>
+</html>

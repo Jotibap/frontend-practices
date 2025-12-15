@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>return initials of names</title>
+  </head>
+  <body>
+    <p>Enter your first name <input type="text" name="" id="fname" /></p>
+    <p>Enter your last name <input type="text" name="" id="lname" /></p>
+
+    <button onclick="getInitials()">get initials of your name</button>
+
+    <p id="result"></p>
+
+    <script>
+      function getInitials() {
+        let f = document.getElementById("fname").value;
+        let l = document.getElementById("lname").value;
+
+        document.getElementById("result").innerHTML = f[0] + " " + l[0];
+      }
+    </script>
+  </body>
+</html>

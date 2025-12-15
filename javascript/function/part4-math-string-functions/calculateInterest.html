@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate interest</title>
+  </head>
+  <body>
+    <p>Enter principle amount <input type="text" name="" id="pAmount" /></p>
+    <p>Enter rate of interest <input type="text" name="" id="interest" /></p>
+    <p>Enter the time <input type="text" name="" id="time" /></p>
+
+    <button onclick="calculateInterest()">calculate interest</button>
+
+    <p id="result"></p>
+
+    <script>
+      function calculateInterest() {
+        let p = Number(document.getElementById("pAmount").value);
+        let r = Number(document.getElementById("interest").value);
+        let t = Number(document.getElementById("time").value);
+
+        return (document.getElementById("result").innerHTML =
+          (p * r * t) / 100);
+      }
+    </script>
+  </body>
+</html>

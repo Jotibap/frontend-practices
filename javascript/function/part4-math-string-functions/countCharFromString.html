@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>count char from string</title>
+  </head>
+  <body>
+    <p>Enter the string <input type="text" name="" id="str" /></p>
+
+    <button onclick="countCharacters()">count characters</button>
+
+    <p id="result"></p>
+
+    <script>
+      function countCharacters() {
+        let s = document.getElementById("str").value;
+
+        let ch = s.length;
+        let count = 0;
+
+        while (ch > 0) {
+          count++;
+          ch--;
+        }
+        document.getElementById("result").innerHTML =
+          "total characters are " + count;
+      }
+    </script>
+  </body>
+</html>
