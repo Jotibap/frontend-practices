@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate electricity bill</title>
+  </head>
+  <body>
+    <p>
+      Enter the units that you have used <input type="text" name="" id="unit" />
+    </p>
+    <p>Enter rate of per unit <input type="text" name="" id="rate" /></p>
+
+    <button onclick="calculateBill()">total bill</button>
+
+    <p id="result"></p>
+
+    <script>
+      function calculateBill() {
+        let u = Number(document.getElementById("unit").value);
+        let r = Number(document.getElementById("rate").value);
+
+        return (document.getElementById("result").innerHTML =
+          "total bill is  " + u * r);
+      }
+    </script>
+  </body>
+</html>

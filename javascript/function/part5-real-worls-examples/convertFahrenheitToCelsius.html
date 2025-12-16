@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>convert farenheit to celsius</title>
+  </head>
+  <body>
+    <p>enter temp in ferenheit <input type="text" name="" id="temp" /></p>
+
+    <button onclick="farenheitTocelsius()">see in celsius</button>
+
+    <p id="result"></p>
+
+    <script>
+      function farenheitTocelsius() {
+        let t = Number(document.getElementById("temp").value);
+
+        return (
+          (document.getElementById("result").innerHTML = ((t - 32) * 5) / 9) +
+          "°C"
+        );
+      }
+    </script>
+  </body>
+</html>

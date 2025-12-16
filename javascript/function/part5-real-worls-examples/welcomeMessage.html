@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome Message</title>
+  </head>
+  <body>
+    <p>Enter your name <input type="text" name="" id="name" /></p>
+
+    <button onclick="welcomeMsg()">welcome</button>
+
+    <p id="message"></p>
+
+    <script>
+      function welcomeMsg() {
+        let name = document.getElementById("name").value;
+
+        return (document.getElementById("message").innerHTML =
+          "Welcome " + name + "! to our webpage");
+      }
+    </script>
+  </body>
+</html>

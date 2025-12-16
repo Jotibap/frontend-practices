@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate age from year of birth</title>
+  </head>
+  <body>
+    <p>Enter yout DOB <input type="date" name="" id="dob" /></p>
+    <p>Enter current year <input type="date" id="current" /></p>
+
+    <button onclick="calculateAge()">calculate Age</button>
+
+    <p id="result"></p>
+
+    <script>
+      function calculateAge() {
+        let dob = document.getElementById("dob").value;
+        let cur = document.getElementById("current").value;
+
+        return (document.getElementById("result").innerHTML =
+          "your age " + (dob - cur));
+      }
+    </script>
+  </body>
+</html>
