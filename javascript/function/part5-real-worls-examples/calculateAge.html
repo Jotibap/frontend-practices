@@ -6,8 +6,8 @@
     <title>calculate age from year of birth</title>
   </head>
   <body>
-    <p>Enter yout DOB <input type="date" name="" id="dob" /></p>
-    <p>Enter current year <input type="date" id="current" /></p>
+    <p>Enter yout DOB <input type="text" name="" id="dob" /></p>
+    <p>Enter current year <input type="tel" id="current" /></p>
 
     <button onclick="calculateAge()">calculate Age</button>
 
@@ -19,7 +19,7 @@
         let cur = document.getElementById("current").value;
 
         return (document.getElementById("result").innerHTML =
-          "your age " + (dob - cur));
+          "your age " + (cur - dob));
       }
     </script>
   </body>
